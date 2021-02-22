@@ -6673,6 +6673,11 @@ qs@6.7.0:
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.7.0.tgz#41dc1a015e3d581f1621776be31afb2876a9b1bc"
   integrity sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
 
+quasar-app-extension-http-authentication@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/quasar-app-extension-http-authentication/-/quasar-app-extension-http-authentication-1.0.4.tgz#fa4b07b45117ded7f0bc6b9fcf020869321a8af3"
+  integrity sha512-JZfRZZFTtrvqbfLp35q04pZTQt9urYvC9iDuoqdkY07YXfnNtVo6qmAjwlfHDTPtyPmL0GpANc9TpwJdWJ8/RQ==
+
 quasar-app-extension-qhierarchy@^0.0.5:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/quasar-app-extension-qhierarchy/-/quasar-app-extension-qhierarchy-0.0.5.tgz#a968a80af22537295c7dc5cb535eee56c36461e7"
@@ -8224,6 +8229,11 @@ uuid@^3.3.2, uuid@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
+
+validator@^12.1.0:
+  version "12.2.0"
+  resolved "https://registry.yarnpkg.com/validator/-/validator-12.2.0.tgz#660d47e96267033fd070096c3b1a6f2db4380a0a"
+  integrity sha512-jJfE/DW6tIK1Ek8nCfNFqt8Wb3nzMoAbocBF6/Icgg1ZFSBpObdnwVY2jQj6qUqzhx5jc71fpvBWyLGO7Xl+nQ==
 
 vary@~1.1.2:
   version "1.1.2"

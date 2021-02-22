@@ -13,7 +13,7 @@
     <div class="row q-col-gutter-sm  q-py-sm">
       <todo-list />
 
-      <card-time-line />
+      <!--<card-time-line />-->
     </div>
 
     <table-visits />
@@ -28,7 +28,7 @@
         CardCharts: () =>  import('components/cards/CardCharts'),
         TabSocial: () =>  import('components/tabs/TabSocial'),
         CardWithImage: () =>  import('components/cards/CardWithImage'),
-        CardTimeLine: () =>  import('components/cards/CardTimeLine'),
+        //CardTimeLine: () =>  import('components/cards/CardTimeLine'),
         TodoList: () =>  import('components/list/TodoList'),
         TableVisits: () =>  import('components/tables/TableVisits'),
     },
@@ -75,5 +75,8 @@
       ],
     }
   },
+  mounted() {
+    console.log(this.$auth.loggedIn())
+  }
 }
 </script>

@@ -1,4 +1,15 @@
 {
   "@quasar/qcalendar": {},
-  "qhierarchy": {}
+  "qhierarchy": {},
+  "http-authentication": {
+    "baseUrl": "/",
+    "authenticationScheme": "Basic",
+    "identifierField": "username",
+    "registerRoute": "/auth/register",
+    "verificationRoute": "/api/system/connect",
+    "loginRoute": "/oapi/user/login",
+    "passwordForgotRoute": "/auth/password/forgot",
+    "passwordResetRoute": "/auth/password/reset",
+    "fetchUserRoute": "/api/system/connect"
+  }
 }

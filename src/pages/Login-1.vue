@@ -21,7 +21,7 @@
             >
               <q-input
                 filled
-                v-model="username"
+                v-model="data.body.username"
                 label="Username"
                 lazy-rules
               />
@@ -29,14 +29,14 @@
               <q-input
                 type="password"
                 filled
-                v-model="password"
+                v-model="data.body.password"
                 label="Password"
                 lazy-rules
 
               />
 
               <div>
-                <q-btn label="Login" to="/" type="button" color="primary"/>
+                <q-btn label="Login" @click="testfunc()" type="button" color="primary"/>
               </div>
             </q-form>
           </q-card-section>
@@ -50,10 +50,37 @@
     export default {
         data() {
             return {
-                username: 'Pratik',
-                password: '12345'
+              data : {
+                body : {
+                  username: 'manager',
+                  password: '1234'
+                }
+
+              }
+
             }
         },
+        methods: {
+          testfunc() {
+            console.log(this.data)
+            this.$auth.login(this.data)
+            .then(response => {
+              //this.$router.replace('/')
+              //this.$store.commit('auth/setUserData', (data) => { return { user: data.user } })
+              this.$axios
+                .post('/api/system/connect','')
+                .then(result => {
+                  console.log(result.data.user)
+                  //console.log(this.data, "investdetail")
+                  this.$store.commit('auth/setUserData', (result) => { return { id: result.data.user.uid } })
+                })
+              console.log(response)
+              //this.$auth.fetch()
+              //this.$store.dispatch('auth/loginCallback')
+              //this.store.commit('auth/setUserData', (data) => { return { id: data.id } })
+            })
+          }
+        }
     }
 </script>
 
